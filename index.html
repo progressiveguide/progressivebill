@@ -52,43 +52,67 @@
     "@type": "FAQPage",
     "mainEntity": [
       {
-  "@type": "Question",
-  "name": "How do I pay my Progressive insurance bill online?",
-  "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Sign in to your Progressive account on the official site or open the mobile app, go to Billing or Payments, choose a payment method (card or bank), enter the amount, and confirm."
-  }
-},
-      {
         "@type": "Question",
-        "name": "Can I pay Progressive by phone?",
+        "name": "How do I pay my Progressive bill?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. You can use the billing phone option listed on your statement or account portal for assisted payments."
+          "text": "Sign in at progressive.com or open the Progressive app, go to Billing or Make a Payment, choose your card or bank account, enter the amount due, and save the confirmation number after checkout."
         }
       },
       {
         "@type": "Question",
-        "name": "Does Progressive offer AutoPay?",
+        "name": "Where can I pay my Progressive insurance bill?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. AutoPay (recurring payments) can be set up from your account dashboard or mobile app and helps avoid missed payments."
+          "text": "You can pay through the official Progressive website, the mobile app, guest pay, the billing phone option listed on your statement, or by mail using the remittance address printed on your bill."
         }
       },
       {
         "@type": "Question",
-        "name": "Is there a grace period for late payments?",
+        "name": "Can I pay Progressive without logging in?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Most Progressive policies have a short grace period—check your paper bill or log in to see your options. Call support before your policy is canceled for a possible extension."
+          "text": "Yes. Use Progressive's guest payment or Pay Without Logging In option and enter the requested policy details, ZIP code, and last name shown on your billing materials."
         }
       },
       {
         "@type": "Question",
-        "name": "How long until payments post?",
+        "name": "Can I make a one-time Progressive payment?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Card, online, guest pay, and phone IVR payments post immediately; bank transfers may take 1–3 business days. Mail can take 5–10 days."
+          "text": "Yes. One-time payments are available online, in the app, and in many cases by phone, so you can pay only the current amount due without turning on recurring billing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I enroll in or stop AutoPay?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Open your billing or payment settings in the Progressive account dashboard or app, add or update your payment method, then turn AutoPay on or off and review the effective date before saving."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there a grace period or late fee if I miss my due date?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Many policies have a short grace period, but it varies by state and policy type. Check your bill for the cancellation date, and act before that deadline because late fees, reinstatement steps, or a lapse can follow missed payments."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What payment methods does Progressive accept?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Accepted methods commonly include checking account ACH, debit card, credit card, guest pay options, app payments, and mailed check or money order, depending on the payment channel offered on your account."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does payment posting take, and will I get a confirmation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Online, guest pay, app, and many phone payments usually generate an immediate confirmation number. ACH can take 1–3 business days to fully settle, and mailed payments can take 5–10 days or longer to appear."
         }
       }
     ]
@@ -152,8 +176,14 @@
     /* INFO BOXES & CTAS */
     .trusted, .security-tip {font-size:1.06em;padding:15px 16px;background:#eaffec;border-left:7px solid #168a12;border-radius:9px;margin:23px 0;}
     .info-box, .callbox {background:#f0f9ff;border-left:7px solid var(--brand);padding:20px 21px;margin:27px 0;font-size:1.09em;border-radius:13px;}
-    .cta-btn {background:var(--cta);color:#fff;padding:13px 26px; font-size:1.05em;border-radius:7px;border:none;cursor:pointer;font-weight:600;}
+    .phone-link{font-weight:800;color:var(--danger);white-space:nowrap;}
+    .phone-link:hover{text-decoration:underline;}
+    .cta-btn {background:var(--cta);color:#fff;padding:13px 26px; font-size:1.05em;border-radius:7px;border:none;cursor:pointer;font-weight:600;display:inline-flex;align-items:center;gap:9px;}
     .cta-btn:hover {background:#168a12;}
+    .cta-btn.secondary{background:#fff;color:var(--brand);border:1px solid #b8cbee;box-shadow:none;padding:11px 20px;}
+    .cta-btn.secondary:hover{background:#eaf3ff;color:var(--brand);}
+    .support-note{margin-top:12px;font-size:0.96em;color:#425466;}
+    .faq-help-box{margin-top:20px;}
 
     /* FOOTER & DISCLAIMER */
     footer{padding:30px 20px;text-align:center;font-size:0.9em;color:#777;background:#002770;color:#eee;margin-top:43px;}
@@ -228,7 +258,7 @@ body{
       Pay your Progressive insurance bill fast — online, by phone, through automatic payments, or with customer support. This complete guide provides all secure options for 2026.
       <br><br>
       <span class="call-highlight">
-        Payment not posted? See the support options below.
+        Payment not posted? Call <a class="phone-link" href="tel:+18884144406">1•888•414•4406</a> or use the support options below.
       </span>
       <br><br>
       <span class="hero-disclaimer">Independent Guide — Not affiliated with Progressive or any government agency.</span>
@@ -317,28 +347,45 @@ the billing phone option shown in your account materials, depending on availabil
   </section>
 
   <section class="card faq-section" id="faq">
-    <h2>Common Questions About Progressive Insurance Bill Pay</h2>
+    <h2>Progressive Bill Pay FAQs: Guest Pay, AutoPay, Posting Times &amp; More</h2>
     <div class="collapse">
-      <div class="collapse-item">
-        <div class="collapse-title"><i class="fa fa-question-circle"></i> How do I check my billing date?</div>
-        <div class="collapse-content">Log into the Progressive dashboard or check your monthly billing statement.</div>
+      <div class="collapse-item open">
+        <div class="collapse-title"><i class="fa fa-question-circle"></i> How do I pay my Progressive bill?</div>
+        <div class="collapse-content">Sign in at <a href="https://www.progressive.com/" target="_blank" rel="noopener">progressive.com</a> or open the app, go to Billing or Make a Payment, choose your payment method, confirm the amount due, and save the receipt or confirmation number.</div>
+      </div>
+      <div class="collapse-item open">
+        <div class="collapse-title"><i class="fa fa-question-circle"></i> Where can I pay my Progressive insurance bill?</div>
+        <div class="collapse-content">You can pay on the official website, through the Progressive mobile app, through guest pay / Pay Without Logging In, by using the billing phone option listed on your statement, or by mail with the payment coupon shown on your bill.</div>
       </div>
       <div class="collapse-item">
-        <div class="collapse-title"><i class="fa fa-question-circle"></i> Can I pay multiple policies in one transaction?</div>
-        <div class="collapse-content">Yes — depending on your account setup, you can often combine payments for multiple policies in one checkout or via AutoPay.</div>
+        <div class="collapse-title"><i class="fa fa-question-circle"></i> Can I pay Progressive without logging in or as a guest?</div>
+        <div class="collapse-content">Yes. Use the guest payment flow and enter the requested billing details such as your policy number, ZIP code, and last name exactly as they appear on your account materials.</div>
       </div>
       <div class="collapse-item">
-        <div class="collapse-title"><i class="fa fa-question-circle"></i> Does Progressive bill pay cost extra?</div>
-        <div class="collapse-content">No fees for online/card/app/ACH payments. Rarely, late payments do incur a fee. Check your bill for current details.</div>
+        <div class="collapse-title"><i class="fa fa-question-circle"></i> Can I make a one-time payment?</div>
+        <div class="collapse-content">Yes. Progressive supports one-time payments online, in the app, and often by phone, which is useful when you do not want to turn on recurring billing or when you are catching up before a due date.</div>
       </div>
       <div class="collapse-item">
-        <div class="collapse-title"><i class="fa fa-question-circle"></i> How are payments processed?</div>
-        <div class="collapse-content">App/online/phone/guest payments post immediately. Bank portal payments take 1–3 business days. Mail takes 5–10 days or more.</div>
+        <div class="collapse-title"><i class="fa fa-question-circle"></i> How do I enroll in or stop AutoPay?</div>
+        <div class="collapse-content">Open Billing or Manage Payment Methods in your Progressive account, add or update your card or bank details, then switch AutoPay on or off and review the next draft date before saving changes.</div>
       </div>
       <div class="collapse-item">
-        <div class="collapse-title"><i class="fa fa-question-circle"></i> Where do I find my policy number?</div>
-        <div class="collapse-content">Check your paper bill, digital statements, or your online account dashboard to see your Progressive policy number for bill pay.</div>
+        <div class="collapse-title"><i class="fa fa-question-circle"></i> Is there a grace period or late fee if I miss my due date?</div>
+        <div class="collapse-content">Many policies have a short grace period, but the exact deadline varies. Review the cancellation date on your bill, pay before that date when possible, and expect that late fees or reinstatement steps may apply once the payment window is missed.</div>
       </div>
+      <div class="collapse-item">
+        <div class="collapse-title"><i class="fa fa-question-circle"></i> What payment methods does Progressive accept?</div>
+        <div class="collapse-content">Payment options commonly include checking account ACH, debit card, credit card, guest pay, app checkout, mailed check, and money order. The exact options shown can vary by policy type and billing setup.</div>
+      </div>
+      <div class="collapse-item">
+        <div class="collapse-title"><i class="fa fa-question-circle"></i> How long does payment posting take, and will I get a confirmation?</div>
+        <div class="collapse-content">Online, guest pay, app, and many phone payments usually provide immediate confirmation. ACH may take 1–3 business days to fully settle, while mailed payments can take 5–10 days or longer to appear on the account.</div>
+      </div>
+    </div>
+    <div class="info-box faq-help-box">
+      <b>Need live help for a pending, overdue, or guest payment?</b><br>
+      <span class="support-note">Phone help is still available for high-intent billing situations when self-service is not enough.</span><br><br>
+      <a class="cta-btn secondary" href="tel:+18884144406"><i class="fa fa-phone-volume"></i> Call 1•888•414•4406</a>
     </div>
   </section>
 
@@ -356,8 +403,9 @@ the billing phone option shown in your account materials, depending on availabil
   <section class="card extra-section" id="support">
     <h2>Get Personalized, Secure Progressive Bill Pay Help</h2>
     <div class="callbox">
-      <b>For urgent support, late bills, or payment questions, call:</b><br>
+      <b>Need same-day payment help, guest pay support, or posting confirmation?</b><br>
       <a class="cta-btn" href="tel:+18884144406"><i class="fa fa-phone-volume"></i> Call 1•888•414•4406</a>
+      <div class="support-note">Best used for overdue notices, billing questions, or situations where you need fast clarification after a payment attempt.</div>
     </div>
     <p style="margin:1.3em 0 0 0;font-size:1.06em;">
       For official Progressive account management & policy documents, always visit the <a href="https://www.progressive.com/" target="_blank" rel="noopener" style="color:#0033a0;font-weight:bold;">Progressive Portal</a>.
