@@ -8,4 +8,67 @@
     <priority>1.0</priority>
   </url>
 
+  <url>
+    <loc>https://progressiveguide.github.io/progressivebill/pay-without-login.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://progressiveguide.github.io/progressivebill/one-time-payment.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://progressiveguide.github.io/progressivebill/updates.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://progressiveguide.github.io/progressivebill/privacy-policy.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://progressiveguide.github.io/progressivebill/faq-index.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://progressiveguide.github.io/progressivebill/faq-pay-without-login.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://progressiveguide.github.io/progressivebill/faq-one-time-payment.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://progressiveguide.github.io/progressivebill/faq-updates.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://progressiveguide.github.io/progressivebill/faq-privacy-policy.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
 </urlset>
